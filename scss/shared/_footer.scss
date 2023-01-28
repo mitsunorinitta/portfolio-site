@@ -1,0 +1,11 @@
+.footer {
+  padding: 0 5% 40px;
+  color: $font-color-gray;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: .2em;
+
+  @include sm {
+    padding: 24px 5% 24px;
+  }
+}

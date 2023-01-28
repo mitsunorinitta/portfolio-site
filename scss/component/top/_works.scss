@@ -1,0 +1,102 @@
+.works {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(1 / 2 * 100% - 35px);
+    margin: 0 0 64px 0;
+
+    @include md {
+      width: calc(1 / 2 * 100% - 20px);
+      margin: 0 0 40px 0;
+    }
+
+    @include sm {
+      width: calc(1 / 2 * 100% - 12px);
+    }
+
+    @include xs {
+      width: 100%;
+      margin: 0;
+    }
+
+    &:nth-child(2n) {
+      margin: 0 0 0 70px;
+
+      @include md {
+        margin: 0 0 0 40px;
+      }
+
+      @include sm {
+        margin: 0 0 0 24px;
+      }
+    }
+
+    & + & {
+      @include xs {
+        margin: 48px 0 0 0;
+      }
+    }
+
+    &-pict {
+      border: 3px solid $font-color;
+      overflow: hidden;
+
+      a {
+        display: block;
+        padding: calc(272 / 365 * 100% / 2);
+        background: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img {
+          padding: 100%;
+          transition: .2s;
+        }
+
+        &:hover {
+          transform: scale(1.1,1.1);
+
+          img {
+            transform: scale(1.1,1.1);
+          }
+        }
+      }
+    }
+
+    &-text-block {
+      text-align: center;
+      margin: 12px 0 0 0;
+      padding: 0 .5em;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+
+        @include xs {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        margin: 2px 0 0 0;
+        font-size: 1.2rem;
+        letter-spacing: .1em;
+
+        @include xs {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &-btn-block {
+      display: flex;
+      justify-content: center;
+      margin: 16px 0 0 0;
+    }
+  }
+}

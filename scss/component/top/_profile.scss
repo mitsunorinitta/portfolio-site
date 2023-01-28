@@ -1,0 +1,17 @@
+.profile {
+  &__text-area {
+    p {
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: .08em;
+
+      & + p {
+        margin: 32px 0 0 0;
+
+        @include xs {
+          margin: 16px 0 0 0;
+        }
+      }
+    }
+  }
+}

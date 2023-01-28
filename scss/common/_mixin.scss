@@ -1,0 +1,35 @@
+@mixin xl {
+  @media screen and (min-width: $desktop-max) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: $desktop-min) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: $laptop-max) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media screen and (max-width: $mobile-min) {
+    @content;
+  }
+}

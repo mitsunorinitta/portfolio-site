@@ -1,0 +1,51 @@
+/* =====================
+
+  カラー用
+
+===================== */
+
+$primary-color: #405A82;
+// $primary-color-darker: #1C659B;
+// $secondary-color: #ff5050;
+// $accent-color: #FFFBA5;
+$gray-color: #FEFEFE;
+$bg-primary-color: $primary-color;
+$bg-gray-color: #FEFEFE;
+$bg-gray-color-darker: #F6F6F6;
+$border-gray-color: #C4C4C4;
+$font-color: #333;
+$font-color-gray: #999;
+$link-color: $primary-color;
+$white: #fff;
+
+/* =====================
+
+  装飾用
+
+===================== */
+
+$box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+$card-shadow: 4px 4px 12px rgba(32, 70, 75, .08);
+
+
+/* =====================
+
+  フォント用
+
+===================== */
+$font-family: 'Avenir', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+/* =====================
+
+  ブレイクポイント用
+
+===================== */
+
+$desktop-max: 1200px;
+$desktop-min: 1025px;
+$laptop-max: 1024px;
+$laptop-min: 768px;
+$tablet-max: 767px;
+$tablet-min: 576px;
+$mobile-max: 599px;
+$mobile-min: 320px;
